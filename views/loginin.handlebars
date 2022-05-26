@@ -1,3 +1,25 @@
+{{#if sessionName}}
+<div class="card mt-5">
+  <!-- 上半部 -->
+  <div class="card-top">
+    <div class="avatar">
+      <img src="https://i.imgur.com/iCV78K4.png" alt="">
+    </div>
+  </div>
+  <!-- 上半部 -->
+
+  <!-- 下半部 -->
+  <div class="card-bottom">
+    <h1>Hello!你已經登入了</h1>
+    <h1>{{sessionName}}</h1>
+    <a href="/">
+      <button class="'btn mt-5">Can not Log Out Now</button>
+    </a>
+  </div>
+  <!-- 下半部 -->
+</div>
+
+{{else}}
 <div class="card mt-5">
   <!-- 上半部 -->
   <div class="card-top">
@@ -16,3 +38,5 @@
   </div>
   <!-- 下半部 -->
 </div>
+
+{{/if}}
